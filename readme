@@ -1,0 +1,27 @@
+Приложение Falcon нужно изолировать от других файлов Python. Для этого используется виртуальная среда (virtual environment). Чтобы создать такую среду, нужно установить инструмент virtualenv.
+
+Python 3.5.
+
+Install virtualenv: sudo apt-get install virtualenv
+
+1. Make venv:  virtualenv testApp -p /usr/bin/python3
+Это создаст локальную копию Python и pip в каталоге venv. Флаг –p позволяет указать версию Python, которую нужно использовать в среде.
+
+
+2. Activate venv Теперь включите виртуальную среду:
+. testApp/bin/activate
+
+
+3. Falcon и Gunicorn
+
+Теперь нужно установить пакеты falcon и Gunicorn. Все это можно установить с помощью пакетного менеджера pip.
+
+Falcon можно установить двумя способами. Вы можете установить бинарный файл Falcon с помощью команды pip install falcon. Но в сочетании с Cython фреймворк Falcon может увеличить свою производительность. Чтобы установить Cython, сообщить об этом Falcon и собрать пакет с помощью компилятора С, введите:
+
+sudo apt-get install build-essential python3-dev
+pip install cython #just for falcon-app executing
+pip install --no-binary :all: falcon
+
+4. Gunicorn:
+
+pip install gunicorn
