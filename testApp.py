@@ -32,4 +32,4 @@ wsgi_app = api = falcon.API()
 testAppRoute = testApp()
 
 # things will handle all requests to the '/things' URL path
-api.add_route('/testInfo', testAppRoute)
+api.add_route('/', testAppRoute)

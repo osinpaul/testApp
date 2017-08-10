@@ -32,4 +32,4 @@ app = falcon.API()
 testAppRoute = testApp()
 
 # things will handle all requests to the '/things' URL path
-app.add_route('/testInfo', testAppRoute)
+app.add_route('/', testAppRoute)

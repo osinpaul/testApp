@@ -25,3 +25,17 @@ pip install --no-binary :all: falcon
 4. Gunicorn:
 
 pip install gunicorn
+
+
+------------------
+Разные способы записи для приложений
+
+$ uwsgi --http :8080 --wsgi-file Example1.py --callable wsgi_app
+
+ gunicorn testApp2:app
+
+
+--------------------
+http://www.giantflyingsaucer.com/blog/?p=4342
+https://www.digitalocean.com/community/tutorials/how-to-deploy-falcon-web-applications-with-gunicorn-and-nginx-on-ubuntu-16-04
+http://falcon.readthedocs.io/en/stable/user/quickstart.html
