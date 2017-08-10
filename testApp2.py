@@ -1,6 +1,6 @@
 import falcon
 import json
-
+#works underthegunicorn
 class testApp(object):
     def on_get(self, req, resp):
         """Handles GET requests"""
@@ -26,10 +26,10 @@ class testApp(object):
                 'Could not decode the request body. The '
                 'JSON was incorrect.')
 # falcon.API instances are callable WSGI apps
-wsgi_app = api = falcon.API()
+app = falcon.API()
 
 # Resources are represented by long-lived class instances
 testAppRoute = testApp()
 
 # things will handle all requests to the '/things' URL path
-api.add_route('/testInfo', testAppRoute)
+app.add_route('/testInfo', testAppRoute)
