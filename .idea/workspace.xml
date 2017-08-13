@@ -2,54 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b0cec76-2cde-47ac-add5-d96e430ba586" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Безымянный документ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/240x240_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_002.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_003.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_004.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_005.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_006.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data/a.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data/osd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data/zrt_lookup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data_002/a.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data_004/a.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data_005/a.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data_005/a_data/aboutNetError.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/a_data_005/show_ads_impl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/adsbygoogle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/adsbygoogle_002.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/analytics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/ca-pub-4672639452561295.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/comment-reply.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/count-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/count.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/embed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/gtm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/library.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/logo-8host.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/pagenavi-css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/si_captcha.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/skel-layers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/skel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/style-large.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/style-xlarge.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/watch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/wp-embed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/Развёртывание приложений Falcon с помощью Gunicorn и Nginx в Ubuntu 16.04 | www.8host.com_files/wp-emoji-release.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testApp2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shedule.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testModel.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HowTo" afterPath="$PROJECT_DIR$/HowTo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/access.log" afterPath="$PROJECT_DIR$/access.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/error.log" afterPath="$PROJECT_DIR$/error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testApp.py" afterPath="$PROJECT_DIR$/testApp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testController.py" afterPath="$PROJECT_DIR$/testController.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="testApp.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="testApp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testApp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="28" />
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -72,31 +33,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testController.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testController.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="66" />
+            <state relative-caret-position="387">
+              <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testModel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testModel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BaseModel</find>
+      <find>notes</find>
+      <find>id</find>
+      <find>note</find>
+      <find>note_cursor</find>
+      <find>eventCursor</find>
+      <find>sid</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,20 +66,22 @@
       <list>
         <option value="$PROJECT_DIR$/testView.py" />
         <option value="$PROJECT_DIR$/trash/testApp2.py" />
+        <option value="$PROJECT_DIR$/testModel.py" />
+        <option value="$PROJECT_DIR$/Falcon-REST-API-Pattern/db_client.py" />
+        <option value="$PROJECT_DIR$/Falcon-REST-API-Pattern/app.py" />
         <option value="$PROJECT_DIR$/testApp.py" />
         <option value="$PROJECT_DIR$/testController.py" />
-        <option value="$PROJECT_DIR$/testModel.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="493" />
-    <option name="y" value="14" />
-    <option name="width" value="1400" />
-    <option name="height" value="1028" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="64" />
+    <option name="y" value="29" />
+    <option name="width" value="981" />
+    <option name="height" value="862" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -133,7 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -147,6 +108,66 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="trash" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5.2 virtualenv at ~/dev/test/testEnv (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5.2 virtualenv at ~/dev/test/testEnv (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5.2 virtualenv at ~/dev/test/testEnv (1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="rethinkdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="Falcon-REST-API-Pattern" type="cbb8eebc:String" user="Falcon-REST-API-Pattern" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+              <item name="home" type="cbb8eebc:String" user="home" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+              <item name="home" type="cbb8eebc:String" user="home" />
+              <item name="osinpaul" type="cbb8eebc:String" user="osinpaul" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -156,6 +177,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -207,27 +229,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23581758" sideWeight="0.50298506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18684356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12161415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22198953" sideWeight="0.49701494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3643979" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -239,22 +261,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testView.py">
+    <entry file="file://$PROJECT_DIR$/testApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="108">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testApp_old.py">
+    <entry file="file://$PROJECT_DIR$/db_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testView.py" />
+    <entry file="file://$PROJECT_DIR$/testApp_old.py" />
     <entry file="file://$PROJECT_DIR$/trash/testApp2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -265,32 +309,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testModel.py">
+    <entry file="file://$PROJECT_DIR$/HowTo">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="137">
+          <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Falcon-REST-API-Pattern/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#153#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testController.py">
+    <entry file="file://$PROJECT_DIR$/Falcon-REST-API-Pattern/db_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="66" />
+        <state relative-caret-position="252">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="28" />
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

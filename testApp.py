@@ -1,10 +1,7 @@
 import falcon
-# import json
-from testController import DataResource
 
-app = falcon.API()
+from testController import *
 
-data_resource = DataResource()
+api = falcon.API()
+api.add_route('/events', eventRes())
 
-app.add_route("/", data_resource)
-app.add_route("/{shed_id}", data_resource)

@@ -1,38 +1,82 @@
-import json
+import os
+import rethinkdb as r
+from rethinkdb.errors import RqlRuntimeError, RqlDriverError
 import falcon
-from testModel import Shedule
+import json
+
+RDB_HOST = os.environ.get('RDB_HOST') or 'localhost'
+RDB_PORT = os.environ.get('RDB_PORT') or 28015
+
+PROJECT_DB = 'shedule'
+PROJECT_TABLE = 'events'
+
+db_connection = r.connect(RDB_HOST, RDB_PORT)
+
+def dbSetup():
+    print(PROJECT_DB, db_connection)
+    try:
+        r.db_create(PROJECT_DB).run(db_connection)
+        print('Настройка подключения завершена \n')
+    except RqlRuntimeError:
+        try:
+            r.db(PROJECT_DB).table_create(PROJECT_TABLE).run(db_connection)
+            print('Таблица создана. Попытка подключения. \n')
+        except:
+            print('Таблица существует. Действий не требуется. \n')
 
 
-class DataResource(object):
-    def on_get(self, request, response, shed_id=None):
-        if shed_id is None:
-            response.body = json.dumps([u.shedMsg for u in Shedule.select()])
+class eventRes:
+    #Обрабатываем GET-запрос
+    def on_get(self, req, resp):
+        print ('Получен запрос: ', id, '\n')
+        if req.get_param("id"):
+            result = {'single': r.db(PROJECT_DB).table(PROJECT_TABLE).get(req.get_param("id")).run(db_connection)}
         else:
-            shedule = Shedule.get(shedMsg=shed_id)
-            response.body = str(shedule)
+            eventCursor = r.db(PROJECT_DB).table(PROJECT_TABLE).run(db_connection)
+            result = {'multiply': [i for i in eventCursor]}
+        print('Результат выполнения GET запроса: ', result, '\n')
+        resp.body = json.dumps(result)
 
-    def on_post(self, request, response):
-        raw = request.stream.read()  # read fail?
-        data = json.loads(raw)  # json fail?
-        if 'shedMsg' not in data or 'shedTime' not in data:
-            raise falcon.HTTPError(falcon.HTTP_400, "Invalid JSON", "Please send a hash with 'shedMsg' and 'shedTime'")
-        shedule = Shedule.create(shedMsg=data['shedMsg'], shedTime=data['shedTime'])
-        shedule.save()
-        response.status = falcon.HTTP_201
-        response.location = '/%s' % shedule.shedMsg
+    #Обрабатываем POST-запрос
+    def on_post(self, req, resp):
+        try:
+            raw_json = req.stream.read().decode('utf-8')
+            print('Получен  POST запрос: ', raw_json, '\n')
 
-    def on_delete(self, request, response, shed_id):
-        shedule = Shedule.get(shedMsg=shed_id)
-        shedule.delete_instance()
-        response.location = '/'
+        except Exception as ex:
+            raise falcon.HTTPError(falcon.HTTP_400,
+                                   'Error',
+                                   ex.message)
+        try:
+            result = json.loads(raw_json, encoding='utf-8')
+            eventCursor = r.db(PROJECT_DB).table(PROJECT_TABLE).insert({'shedMsg': result['shedMsg'], 'shedTime': result['shedTime']}).run(db_connection)
+            print('Результат выполнения POST запроса: ', eventCursor, '\n')
+            resp.body = 'inserted %s' % eventCursor
+        except ValueError:
+            raise falcon.HTTPError(falcon.HTTP_400,
+                                   'Invalid JSON',
+                                   'Could not decode the request body. The '
+                                   'JSON was incorrect.')
 
-    def on_put(self, request, response, shed_id):
-        raw = request.stream.read()
-        data = json.loads(raw)
-        if 'shedMsg' not in data or 'shedTime' not in data:
-            raise falcon.HTTPError(falcon.HTTP_400, "Invalid JSON", "Please send a right hash")
-        shedule = Shedule.get(shedMsg=shed_id)
-        shedule.shedMsg = data['shedMsg']
-        shedule.shedTime = data['shedTime']
-        shedule.save()
-        response.location = '/%s' % shedule.shedMsg
+    #Обрабатываем DELETE-запрос
+    def on_delete(self, req, resp):
+        try:
+            raw_json = req.stream.read().decode('utf-8')
+            print('Получен  DELETE запрос: ', raw_json, '\n')
+
+        except Exception as ex:
+            raise falcon.HTTPError(falcon.HTTP_400,
+                                   'Error',
+                                   ex.message)
+        try:
+            result = json.loads(raw_json, encoding='utf-8')
+            eventCursor = r.db(PROJECT_DB).table(PROJECT_TABLE).filter({'shedMsg': result['shedMsg'], 'shedTime': result['shedTime']}).delete().run(db_connection)
+            print('Результат выполнения DELETE запроса: ', eventCursor, '\n')
+            resp.body = 'inserted %s' % eventCursor
+        except ValueError:
+            raise falcon.HTTPError(falcon.HTTP_400,
+                                   'Invalid JSON',
+                                   'Could not decode the request body. The '
+                                   'JSON was incorrect.')
+
+dbSetup()
