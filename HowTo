@@ -1,4 +1,10 @@
+Запуск: gunicorn testApp:api из под testEnv
 
+rethinkdb management: http://localhost:8080/
+
+
+
+-------------
 . testApp/bin/activate
 1. Make venv:  virtualenv testApp -p /usr/bin/python3
 2. Activate venv Теперь включите виртуальную среду:    testEnv/bin/activate
