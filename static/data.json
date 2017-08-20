@@ -1,0 +1,49 @@
+{
+    "multiply": [
+        {
+            "shedMsg": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 1",
+            "shedTime": "00:00",
+            "id": "1f43fe03-8d48-44a8-9080-4678bf5385e0"
+        },
+        {
+            "shedMsg": "Some exercizing",
+            "shedTime": "06:00",
+            "id": "8069840e-4d89-4038-95fd-a2ad6c6d216a"
+        },
+        {
+            "shedMsg": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 4",
+            "shedTime": "00:00",
+            "id": "6021d545-e6cf-4b42-9210-5ba425715d14"
+        },
+        {
+            "shedMsg": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 3",
+            "shedTime": "00:00",
+            "id": "2dbe736d-832f-4947-9f96-b8c1300496ac"
+        },
+        {
+            "shedMsg": "Loundry :)",
+            "shedTime": "07:00",
+            "id": "589339e4-9e32-482e-a472-907f8669c4eb"
+        },
+        {
+            "shedMsg": "Swimming as new event",
+            "shedTime": "12:10",
+            "id": "87424060-2155-4c2c-a055-be22289a2508"
+        },
+        {
+            "shedMsg": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 2",
+            "shedTime": "00:00",
+            "id": "7cc90e6c-f343-415b-8ec2-ba4054a2a129"
+        },
+        {
+            "shedMsg": "Working HARDLY",
+            "shedTime": "20:20",
+            "id": "942da3fa-a2b4-4212-aaec-af45ebc14650"
+        },
+        {
+            "shedMsg": "Snowboarding",
+            "shedTime": "18:00",
+            "id": "a880448c-5a62-4a15-9788-d56520d8398e"
+        }
+    ]
+}

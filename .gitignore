@@ -1,0 +1,10 @@
+#ignore them:
+/testEnv/*
+/__pycache__/*
+/.git/*
+/.idea/*
+/angular-cli/*
+/static/node_modules/*
+*.log
+*.txt
+*.conf
