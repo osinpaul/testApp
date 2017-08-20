@@ -3,6 +3,8 @@
 /__pycache__/*
 /.git/*
 /.idea/*
+/.idea/
+.idea
 /angular-cli/*
 /static/node_modules/*
 *.log

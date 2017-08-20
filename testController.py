@@ -62,7 +62,7 @@ class eventRes:
     def on_delete(self, req, resp):
         try:
             raw_json = req.stream.read().decode('utf-8')
-            print('Получен  DELETE запрос: ', raw_json, '\n')
+            print('Получен DELETE запрос: ', raw_json, '\n')
 
         except Exception as ex:
             raise falcon.HTTPError(falcon.HTTP_400,
