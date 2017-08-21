@@ -17,6 +17,7 @@ var EventService = (function () {
         this.url = "http://localhost/data/events";
     }
     EventService.prototype.getEvents = function () {
+        console.log("Осуществлен GET запрос ", this.url);
         return this.http.get(this.url);
     };
     return EventService;

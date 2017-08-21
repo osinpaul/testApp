@@ -15,6 +15,8 @@ require("rxjs/Rx");
 var AppComponent = (function () {
     function AppComponent(serv) {
         this.serv = serv;
+        this.events = []; // для хранения событий
+        this.sortEvens = []; // для хранения событий
         this.events = new Array();
     }
     AppComponent.prototype.ngOnInit = function () {
@@ -22,8 +24,14 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.loadEvents = function () {
         var _this = this;
-        this.serv.getEvents().subscribe(function (resp) {
-            _this.events = resp.json();
+        this.serv.getEvents()
+            .subscribe(function (resp) {
+            var eventList = resp.json().data;
+            for (var index in eventList) {
+                console.log(eventList[index]);
+                var event_1 = eventList[index];
+                _this.events.push({ entryId: event_1.id, shedMsg: event_1.shedMsg, shedTime: event_1.shedTime });
+            }
         });
     };
     // загружаем один из двух шаблонов
@@ -33,12 +41,22 @@ var AppComponent = (function () {
         } else {*/
         return this.readOnlyTemplate;
     };
+    AppComponent.prototype.timeTemplate = function (event) {
+        /*if (this.editedUser && this.editedUser.Id == user.Id) {
+            return this.editTemplate;
+        } else {*/
+        return this.showTimeTemplate;
+    };
     return AppComponent;
 }());
 __decorate([
     core_1.ViewChild('readOnlyTemplate'),
     __metadata("design:type", core_1.TemplateRef)
 ], AppComponent.prototype, "readOnlyTemplate", void 0);
+__decorate([
+    core_1.ViewChild('showTimeTemplate'),
+    __metadata("design:type", core_1.TemplateRef)
+], AppComponent.prototype, "showTimeTemplate", void 0);
 AppComponent = __decorate([
     core_2.Component({
         selector: 'testApp',

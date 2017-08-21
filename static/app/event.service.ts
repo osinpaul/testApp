@@ -12,6 +12,7 @@ export class EventService {
     constructor(private http: Http) { }
 
     getEvents() {
+        console.log("Осуществлен GET запрос ", this.url);
         return this.http.get(this.url);
     }
 }

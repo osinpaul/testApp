@@ -1,35 +1,55 @@
-<h1>Events: </h1>
-<!--<input type="button" value="Добавить" class="btn btn-default" (click)="addEvent()" />-->
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <td>entryId</td>
-            <td>shedMsg</td>
-            <td>shedTime</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let event of events">
-            <ng-template [ngTemplateOutlet]="loadTemplate(event)" 
-                        [ngOutletContext]="{ $implicit: event}">
-            </ng-template>
-        </tr>
-    </tbody>
-</table>
-<div>{{statusMessage}}</div>
-  
-  
-<!--шаблон для чтения-->
-<ng-template #readOnlyTemplate let-event>
-    <td>{{event.entryId}}</td>
-    <td>{{event.shedMsg}}</td>
-    <td>{{event.shedTime}}</td>
-    <!--<td>
-        <input type="button" value="Изменить" class="btn btn-default" (click)="editEvent(event)" />
-    </td>
-    <td>
-        <input type="button" value="Удалить" (click)="deleteEvent(event)" class="btn btn-danger" />
-    </td>-->
-</ng-template>
+<div class="container">
+    <nav class="navbar navbar-default" style="padding: 10px;">
+        <div class="container">
+            <div class="col-md-12">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#hiddenForm">Add new...</button>
+                    <br>
+                    <div id="hiddenForm" class="collapse">
+                        <div class="form-inline">
+                            <input type="text" class="form-control" placeholder="Enter name of activity" name="" id="">
+                            <input type="time" class="form-control" placeholder="and time :)" name="" id="">
+                            <button type="submit" class="btn btn-primary" (click)="addEvent()" >OK!</button>
+                            <button class="btn btn-warning" data-toggle="collapse" data-target="#hiddenForm" >Not now...</button>
+                        </div>
+                    </div> 
+            </div>
+            <div id="hiddenForm2" class="collapse">
+                <p>JUSTVI</p> <input type="button" data-toggle="collapse" data-target="hiddenForm" value="Добавить позицию"
+                    class="btn btn-primary" (click)="addEvent()" /></div>
+        </div>
+    </nav>
+    <div class="col-md-8">
+        <h4>Events: </h4>
+        <table class="table table-striped">
+            <tbody>
+                <tr *ngFor="let event of events">
+                    <ng-template [ngTemplateOutlet]="loadTemplate(event)" [ngOutletContext]="{ $implicit: event}">
+                    </ng-template>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+        <h4>Timing:</h4>
+        <table class="table table-striped">
+            <tbody>
+                <tr *ngFor="let event of events">
+                    <ng-template [ngTemplateOutlet]="timeTemplate(event)" [ngOutletContext]="{ $implicit: event}">
+                    </ng-template>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--шаблон для чтения-->
+    <ng-template #readOnlyTemplate let-event>
+        <td><input type="checkbox"></td>
+        <td>{{event.shedTime}}</td>
+        <td>{{event.shedMsg}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteEvent(event)">Delete</button></td>
+    </ng-template>
+    <ng-template #showTimeTemplate let-event>
+        <td>{{event.shedTime}}</td>
+    </ng-template>
+</div>

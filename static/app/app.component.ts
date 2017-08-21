@@ -14,12 +14,12 @@ import 'rxjs/Rx';
 export class AppComponent implements OnInit {
     //типы шаблонов. TemplateRef используется для создания вложенных представлений.
     @ViewChild('readOnlyTemplate') readOnlyTemplate: TemplateRef<any>;
+    @ViewChild('showTimeTemplate') showTimeTemplate: TemplateRef<any>;
 
 
     editedEvent: Event; //для хранения редактируемого события
-    events: Array<Event>; // для хранения событий
-    isNewRecord: boolean;
-    statusMessage: string;
+    events: Event[] = []; // для хранения событий
+    sortEvens: Event[] = []; // для хранения событий
 
     constructor(private serv: EventService) {
         this.events = new Array<Event>();
@@ -29,18 +29,30 @@ export class AppComponent implements OnInit {
         this.loadEvents();//загрузка записей
     }
 
-        private loadEvents() {
-        this.serv.getEvents().subscribe((resp: Response) => {
-            this.events = resp.json();
-        });
+
+    private loadEvents() {
+        this.serv.getEvents()
+            .subscribe((resp: Response) => {
+                let eventList = resp.json().data;
+                for (let index in eventList){
+                    console.log(eventList[index]);
+                    let event = eventList[index];
+                    this.events.push({entryId: event.id, shedMsg: event.shedMsg, shedTime: event.shedTime});
+                }
+            });
     }
- 
+
     // загружаем один из двух шаблонов
     loadTemplate(event: Event) {
         /*if (this.editedUser && this.editedUser.Id == user.Id) {
             return this.editTemplate;
         } else {*/
-            return this.readOnlyTemplate;
-        }
+        return this.readOnlyTemplate;
     }
-  
+    timeTemplate(event: Event) {
+        /*if (this.editedUser && this.editedUser.Id == user.Id) {
+            return this.editTemplate;
+        } else {*/
+        return this.showTimeTemplate;
+    }
+}

@@ -33,8 +33,10 @@ class eventRes:
             result = {'single': r.db(PROJECT_DB).table(PROJECT_TABLE).get(req.get_param("id")).run(db_connection)}
         else:
             eventCursor = r.db(PROJECT_DB).table(PROJECT_TABLE).run(db_connection)
-            result = {'multiply': [i for i in eventCursor]}
+            result = {'data': [i for i in eventCursor]}
+            #result = {i for i in eventCursor}
         print('Результат выполнения GET запроса: ', result, '\n')
+        resp.set_header('Access-Control-Allow-Origin','*')
         resp.body = json.dumps(result)
 
     #Обрабатываем POST-запрос
