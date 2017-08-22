@@ -16,21 +16,32 @@ var AppComponent = (function () {
     function AppComponent(serv) {
         this.serv = serv;
         this.events = []; // для хранения событий
-        this.sortEvens = []; // для хранения событий
         this.events = new Array();
     }
     AppComponent.prototype.ngOnInit = function () {
-        this.loadEvents(); //загрузка записей
+        this.loadSortEvents(); //загрузка записей
     };
     AppComponent.prototype.loadEvents = function () {
         var _this = this;
         this.serv.getEvents()
             .subscribe(function (resp) {
-            var eventList = resp.json().data;
+            var eventList = resp.json().data; //let не видим за пределами?
             for (var index in eventList) {
-                console.log(eventList[index]);
+                console.log('evlist: ', eventList[index].shedMsg);
                 var event_1 = eventList[index];
-                _this.events.push({ entryId: event_1.id, shedMsg: event_1.shedMsg, shedTime: event_1.shedTime });
+                _this.events.push({ entryId: event_1.entryId, shedMsg: event_1.shedMsg, shedTime: event_1.shedTime });
+            }
+        });
+    };
+    AppComponent.prototype.loadSortEvents = function () {
+        var _this = this;
+        this.serv.getEvents()
+            .subscribe(function (resp) {
+            var eventList = resp.json().data; //let не видим за пределами?
+            for (var index in eventList) {
+                console.log('evlist: ', eventList[index].shedMsg);
+                var event_2 = eventList[index];
+                _this.events.push({ entryId: event_2.entryId, shedMsg: event_2.shedMsg, shedTime: '2000-01-01T' + event_2.shedTime + ':00.000Z' });
             }
         });
     };
@@ -42,9 +53,6 @@ var AppComponent = (function () {
         return this.readOnlyTemplate;
     };
     AppComponent.prototype.timeTemplate = function (event) {
-        /*if (this.editedUser && this.editedUser.Id == user.Id) {
-            return this.editTemplate;
-        } else {*/
         return this.showTimeTemplate;
     };
     return AppComponent;
@@ -61,7 +69,8 @@ AppComponent = __decorate([
     core_2.Component({
         selector: 'testApp',
         templateUrl: './app/app.component.html',
-        providers: [event_service_1.EventService]
+        providers: [event_service_1.EventService],
+        styleUrls: ['app/app.component.css']
     }),
     __metadata("design:paramtypes", [event_service_1.EventService])
 ], AppComponent);

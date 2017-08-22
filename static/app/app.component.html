@@ -2,20 +2,22 @@
     <nav class="navbar navbar-default" style="padding: 10px;">
         <div class="container">
             <div class="col-md-12">
-                    <button class="btn btn-primary" data-toggle="collapse" data-target="#hiddenForm">Add new...</button>
-                    <br>
-                    <div id="hiddenForm" class="collapse">
-                        <div class="form-inline">
-                            <input type="text" class="form-control" placeholder="Enter name of activity" name="" id="">
-                            <input type="time" class="form-control" placeholder="and time :)" name="" id="">
-                            <button type="submit" class="btn btn-primary" (click)="addEvent()" >OK!</button>
-                            <button class="btn btn-warning" data-toggle="collapse" data-target="#hiddenForm" >Not now...</button>
-                        </div>
-                    </div> 
+                <div class="col-md-9">
+                    <h2>eventList:</h2>
+                </div>
+                <div class="col-md-3"><button class="btn btn-primary" data-toggle="collapse" data-target="#hiddenForm">Add new...</button></div>
             </div>
-            <div id="hiddenForm2" class="collapse">
-                <p>JUSTVI</p> <input type="button" data-toggle="collapse" data-target="hiddenForm" value="Добавить позицию"
-                    class="btn btn-primary" (click)="addEvent()" /></div>
+            <div class="col-md-12">
+                <div id="hiddenForm" class="collapse">
+                    <p>Add new element:</p>
+                    <div class="form-inline">
+                        <input type="text" class="form-control" placeholder="Enter name of activity" name="" id="">
+                        <input type="time" class="form-control" placeholder="and time :)" name="" id="">
+                        <button type="submit" class="btn btn-primary" (click)="addEvent()">OK!</button>
+                        <button class="btn btn-warning" data-toggle="collapse" data-target="#hiddenForm">Not now...</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="col-md-8">
