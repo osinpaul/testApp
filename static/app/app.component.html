@@ -1,28 +1,41 @@
 <div class="container">
-    <nav class="navbar navbar-default" style="padding: 10px;">
+    <div class="row">
         <div class="container">
             <div class="col-md-12">
-                <div class="col-md-9">
-                    <h2>eventList:</h2>
-                </div>
-                <div class="col-md-3"><button class="btn btn-primary" data-toggle="collapse" data-target="#hiddenForm">Add new...</button></div>
-            </div>
-            <div class="col-md-12">
-                <div id="hiddenForm" class="collapse">
-                    <p>Add new element:</p>
-                    <div class="form-inline">
-                        <input type="text" class="form-control" placeholder="Enter name of activity" name="" id="">
-                        <input type="time" class="form-control" placeholder="and time :)" name="" id="">
-                        <button type="submit" class="btn btn-primary" (click)="addEvent()">OK!</button>
-                        <button class="btn btn-warning" data-toggle="collapse" data-target="#hiddenForm">Not now...</button>
+                <div class="jumbotron">
+                    <div class="col-md-6">
+                        <h2>{{title}}</h2>
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#hiddenForm">Add new...</button></div>
+                    <div id="hiddenForm" class="collapse">
+                        <div class="col-md-6 text-right">
+                            <p>Add new element:</p>
+                            <div class="form-inline">
+                                <input type="text" class="form-control name" placeholder="Enter name of activity" name="" id="">
+                                <br>
+                                <input type="number" class="form-control hour" placeholder="HH" name="" id="" min="0" max="24"><span>:</span>
+                                <input type="number" class="form-control minute" placeholder="MM" name="" id="" min="0" max="59">
+                                <br>
+                                <button type="submit" class="btn btn-primary" (click)="addEvent()">Submit</button>
+                                <button class="btn btn-warning" data-toggle="collapse" data-target="#hiddenForm">Later</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
-    </nav>
+    </div>
+    <div class="clearfix"></div>
     <div class="col-md-8">
         <h4>Events: </h4>
         <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>TIME</td>
+                    <td>MSG</td>
+                    <td>ACTIVITY</td>
+                </tr>
+            </thead>
             <tbody>
                 <tr *ngFor="let event of events">
                     <ng-template [ngTemplateOutlet]="loadTemplate(event)" [ngOutletContext]="{ $implicit: event}">
@@ -33,7 +46,7 @@
     </div>
     <div class="col-md-1"></div>
     <div class="col-md-3">
-        <h4>Timing:</h4>
+        <h4>Quick time assign:</h4>
         <table class="table table-striped">
             <tbody>
                 <tr *ngFor="let event of events">
@@ -46,12 +59,11 @@
 
     <!--шаблон для чтения-->
     <ng-template #readOnlyTemplate let-event>
-        <td><input type="checkbox"></td>
-        <td>{{event.shedTime}}</td>
+        <td>{{event.shedTime | date:'HH:mm'}}</td>
         <td>{{event.shedMsg}}</td>
         <td><button type="button" class="btn btn-danger" (click)="deleteEvent(event)">Delete</button></td>
     </ng-template>
     <ng-template #showTimeTemplate let-event>
-        <td>{{event.shedTime}}</td>
+        <td>{{event.shedTime| date:'HH:mm'}}</td>
     </ng-template>
 </div>

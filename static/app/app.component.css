@@ -1,3 +1,15 @@
 button{
-    margin-bottom:15px;
+    margin:15px 0px;
+}
+.jumbotron{
+    height: 200px;
+    padding-top: 15px;
+}
+.hour, .minute{
+    width: 100px !important;
+
+}
+.name{
+    width: 208px;
+    margin-bottom: 5px;
 }

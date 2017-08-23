@@ -1,6 +1,5 @@
-import { TemplateRef, ViewChild } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
-import { Event } from './Event';
+import { TemplateRef, ViewChild , Component, OnInit, Pipe, PipeTransform  } from '@angular/core';
+import { Event, EventAdd } from './Event';
 import { EventService } from './event.service';
 import { Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
@@ -10,7 +9,7 @@ import 'rxjs/Rx';
     selector: 'testApp',
     templateUrl: './app/app.component.html',
     providers: [EventService],
-    styleUrls: ['app/app.component.css']
+    styleUrls: ['app/app.component.css'],
 })
 
 export class AppComponent implements OnInit {
@@ -18,15 +17,17 @@ export class AppComponent implements OnInit {
     @ViewChild('readOnlyTemplate') readOnlyTemplate: TemplateRef<any>;
     @ViewChild('showTimeTemplate') showTimeTemplate: TemplateRef<any>;
 
+    title: string = 'Shedule service: ';
     events: Event[] = []; // для хранения событий
-    message: string;
+    message: string;//для вывода статуса
+    newEvent: EventAdd;
 
     constructor(private serv: EventService) {
         this.events = new Array<Event>();
     }
 
     ngOnInit() {
-        this.loadSortEvents();//загрузка записей
+        this.loadEvents();//загрузка записей
     }
 
     public loadEvents() {
@@ -41,26 +42,20 @@ export class AppComponent implements OnInit {
             });
 
     }
+    
+    addEvent(event: EventAdd){
+        this.newEvent = new EventAdd (event.shedMsg, event.shedTime);
+        console.log('NEW! event.shedMsg: '+ event.shedMsg +'event.shedTime: '+ event.shedTime);
+    }
 
-    public loadSortEvents() {
-        this.serv.getEvents()
-            .subscribe((resp: Response) => {
-                let eventList = resp.json().data;//let не видим за пределами?
-                for (let index in eventList) {
-                    console.log('evlist: ', eventList[index].shedMsg);
-                    let event = eventList[index];
-                    this.events.push({ entryId: event.entryId, shedMsg: event.shedMsg, shedTime: '2000-01-01T'+event.shedTime+':00.000Z'});
-                }
-            });
-
+    deleteEvent(event: EventAdd){
+        this.newEvent = new EventAdd (event.shedMsg, event.shedTime);
+        this.serv.deleteEvent()
     }
 
 
     // загружаем один из двух шаблонов
     loadTemplate(event: Event) {
-        /*if (this.editedUser && this.editedUser.Id == user.Id) {
-            return this.editTemplate;
-        } else {*/
         return this.readOnlyTemplate;
     }
 

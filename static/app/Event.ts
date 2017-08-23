@@ -6,5 +6,11 @@ export class Event {
         public shedTime: string) { }
 }
 
+export class EventAdd {
+    constructor(
+        public shedMsg: string,
+        public shedTime: string) { }
+}
+
 //представляет запись в расписании и содержит 
 //3 общедоступных поля: entryId, shedMsg, shedTime

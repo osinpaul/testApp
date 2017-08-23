@@ -9,6 +9,14 @@ var Event = (function () {
     return Event;
 }());
 exports.Event = Event;
+var EventAdd = (function () {
+    function EventAdd(shedMsg, shedTime) {
+        this.shedMsg = shedMsg;
+        this.shedTime = shedTime;
+    }
+    return EventAdd;
+}());
+exports.EventAdd = EventAdd;
 //представляет запись в расписании и содержит 
 //3 общедоступных поля: entryId, shedMsg, shedTime 
 //# sourceMappingURL=Event.js.map

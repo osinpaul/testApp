@@ -11,14 +11,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 //Необходим для взаимодействия с сервером.
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var http_2 = require("@angular/http");
+var Observable_1 = require("rxjs/Observable");
 var EventService = (function () {
     function EventService(http) {
         this.http = http;
         this.url = "http://localhost/data/events";
+        this.headers = new http_2.Headers({ 'Content-Type': 'application/json;charset=utf-8' });
     }
+    //Интерфейс получения данных с сервера
     EventService.prototype.getEvents = function () {
-        console.log("Осуществлен GET запрос ", this.url);
-        return this.http.get(this.url);
+        console.log("Осуществлен GET запрос, GetEvents ", this.url);
+        return this.http.
+            get(this.url).catch(function (error) { return Observable_1.Observable.throw(error); });
+    };
+    //Интерфейс обновления времени (!!!)
+    EventService.prototype.updateEvent = function (obj) {
+        var body = JSON.stringify(obj); //так-то необязательно
+        var headers = new http_2.Headers({ 'Content-Type': 'application/json;charset=utf-8' });
+        return 1;
+    };
+    //Интерфейс добавления новой записи в БД
+    EventService.prototype.createEvent = function (obj) {
+        var body = JSON.stringify(obj);
+        var headers = new http_2.Headers({ 'Content-Type': 'application/json;charset=utf-8' });
+        console.log("Осуществлен PUSH запрос, CreateEvent");
+        return this.http.post(this.url + '/', body, { headers: headers })
+            .map(function (resp) { return resp.json(); })
+            .catch(function (error) { return Observable_1.Observable.throw(error); });
+    };
+    ;
+    //Интерфейс для удаления записи из БД. На вход shedMsg & shedTime, которые передаются серверу
+    EventService.prototype.deleteEvent = function (obj) {
+        var body = JSON.stringify(obj);
+        var headers = new http_2.Headers({ 'Content-Type': 'application/json;charset=utf-8' });
+        return this.http.delete(this.url + '/' + body, { headers: headers });
     };
     return EventService;
 }());
