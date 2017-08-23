@@ -10,3 +10,5 @@
 *.log
 *.txt
 *.conf
+testApp.py
+testController.py
